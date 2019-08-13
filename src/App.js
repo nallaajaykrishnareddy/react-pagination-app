@@ -8,7 +8,7 @@ const App = () => {
   const [posts, SetPosts] = useState([]);
   const [loading, SetLoading] = useState([]);
   const [currentPage, SetCurrentPage] = useState(1);
-  const [postsPerPage, SetPostsPerPage] = useState(10);
+  const [postsPerPage, SetPostsPerPage] = useState(1);
   const getPosts = async () => {
     SetLoading(true);
     let posts = await Axios.get("https://jsonplaceholder.typicode.com/posts");
